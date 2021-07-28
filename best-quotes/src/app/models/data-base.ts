@@ -2,33 +2,23 @@ import { Quotation } from "./quotation";
 
 export const QUOTES: Quotation[] = [
   {
-    author: 'Jonathan Carroll',
-    sentence: 'To, że milczę, nie znaczy, że nie mam nic do powiedzenia.',
+    author: 'James Rollins',
+    sentence: 'Books are keys that open many doors.',
     votes: -4,
   },
   {
-    author: 'Suzanne Collins',
-    sentence: 'Masz w sobie tyle uroku co zdechła dżdżownica.',
+    author: 'Holly Black, The Cruel Prince',
+    sentence: 'Show your power by appearing powerless.',
     votes: 2,
   },
   {
-    author: 'George Eliot',
-    sentence: 'Nigdy nie jest za późno, by stać się tym, kim chcemy być.',
+    author: 'Elise Kova, Air Awakens',
+    sentence: 'I am going to go into this world, and I don\'t care if you and your narrow mind cannot be a part of it.',
     votes: 1,
   },
   {
-    author: 'Stanisław Lem',
-    sentence: 'Bądź dobrej myśli, bo po co być złej.',
-    votes: null,
-  },
-  {
-    author: 'Tove Jansson',
-    sentence: 'Mówienie tak bardzo przeszkadza w myśleniu.',
-    votes: -8,
-  },
-  {
-    author: 'Peter Lippert',
-    sentence: 'Życia nie można wybrać, ale można z niego coś zrobić.',
+    author: 'Roshani Chokshi, The Gilded Wolves',
+    sentence: 'Aristocracy is just a fancy word for thievery.',
     votes: null,
   }
 ];
