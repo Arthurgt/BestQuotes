@@ -1,0 +1,7 @@
+<span class="badge grey darken-2 left white-text">{{ quotationToVote.votes }}</span>
+<app-button [customClasses]="'btn blue mr-5'" (clickMyButton)="addVote(quotationToVote,1)">
+  <i class="material-icons">exposure_plus_1</i>
+</app-button>
+<app-button [customClasses]="'btn red mr-5'" (clickMyButton)="addVote(quotationToVote,-1)">
+  <i class="material-icons">exposure_neg_1</i>
+</app-button>
