@@ -6,6 +6,8 @@
       <input type="text" placeholder="Quote" [(ngModel)]="quotation.sentence">
     </div>
     <div class="input-field col s2">
-      <button class="btn small" (click)="addQuotation()">Add</button>
+        <app-button [customClasses]="'btn small'" (clickMyButton)="addQuotation()">
+            <i class="material-icons">add</i>
+        </app-button>
     </div>
-  </div>
+</div>
