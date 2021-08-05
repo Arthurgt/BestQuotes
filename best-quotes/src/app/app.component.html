@@ -1,23 +1,9 @@
-<nav>
-  <div class="nav-wrapper teal darken-3">
-    <span class="brand-logo center">Best Quotes</span>
-  </div>
-</nav>
+<app-navbar></app-navbar>
 <div class="container q-container">
-  <button class="btn-floating teal add-button" (click)="onSwitchForm()">
+  <button class="btn-floating teal add-button" (click)="form.onSwitchForm()">
     <i class="material-icons">add</i>
   </button>
-  <div class="row edit-row" [class.drawer]="showForm">
-    <div class="input-field col s4">
-      <input type="text" placeholder="Author" [(ngModel)]="quotation.author">
-    </div>
-    <div class="input-field col s6">
-      <input type="text" placeholder="Quote" [(ngModel)]="quotation.sentence">
-    </div>
-    <div class="input-field col s2">
-      <button class="btn small" (click)="addQuotation()">Add</button>
-    </div>
-  </div>
+  <app-form #form (newQuotation)="onNewQuotation($event)"></app-form>
   <div class="row">
     <div class="col s8">
       <div class="row">
@@ -45,28 +31,8 @@
       </div>
     </div>
     <div class="col s4">
-      <div class="col s12">
-        <h5>Best Quotes</h5>
-        <div class="collection">
-          <ng-container *ngFor="let quotation of quotes">
-            <p class="collection-item" *ngIf="quotation.votes > 0">
-              <span class="blue lighten-4 badge">{{ quotation.votes }}</span>
-              {{ quotation.sentence }}<br>
-              <span class="blue-text">{{ quotation.author }}</span>
-            </p>
-          </ng-container>
-        </div>
-        <h5>Worst Quotes</h5>
-        <div class="collection">
-          <ng-container *ngFor="let quotation of quotes">
-            <p class="collection-item" *ngIf="quotation.votes < 0">
-              <span class="blue lighten-4 badge">{{ quotation.votes }}</span>
-              {{ quotation.sentence }}<br>
-              <span class="blue-text">{{ quotation.author }}</span>
-            </p>
-          </ng-container>
-        </div>
-      </div>
+      <app-ranking [title]="'Best Quotes'" [quotes]="bestQuotes()"></app-ranking>
+      <app-ranking [title]="'Worst Quotes'" [quotes]="worstQuotes()"></app-ranking>
     </div>
   </div>
 </div>

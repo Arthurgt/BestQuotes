@@ -9,9 +9,7 @@ import { Quotation } from './models/quotation';
   styleUrls : ['./app.component.css']
 })
 export class AppComponent {
-  showForm = false;
   quotes : Quotation[] = QUOTES;
-  quotation : Quotation = {author : '', sentence : '', votes : 0};
   config: { [key: string]: string | Date } = null;
 
   constructor() {
@@ -22,16 +20,19 @@ export class AppComponent {
     };
   }
 
-  onSwitchForm() : void {
-    this.showForm = !this.showForm;
-  }
-
-  addQuotation() : void {
-    this.quotes.unshift(this.quotation);
-    this.quotation = {author : '', sentence : '', votes : 0};
-  }
-
   addVote(quotation : Quotation, value : number) : void {
     quotation.votes += value;
+  }
+
+  bestQuotes() {
+    return this.quotes.filter(q => q.votes > 0);
+  }
+
+  worstQuotes() {
+    return this.quotes.filter(q => q.votes < 0);
+  }
+
+  onNewQuotation(quotation : Quotation) {
+    this.quotes.unshift(quotation);
   }
 }
