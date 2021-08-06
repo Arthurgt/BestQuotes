@@ -4,12 +4,12 @@ Best quotes application. Simple application created using Angular 9. It is simpl
 
 Chrome View:
 
-![alt text](https://raw.githubusercontent.com/Arthurgt/BestQuotes/master/BestQuotes/src/assets/Github1.png)
+![alt text](https://raw.githubusercontent.com/Arthurgt/BestQuotes/master/best-quotes/src/assets/Github1.png)
 
 Chrome View:
 
-![alt text](https://raw.githubusercontent.com/Arthurgt/BestQuotes/master/BestQuotes/src/assets/Github2.png)
+![alt text](https://raw.githubusercontent.com/Arthurgt/BestQuotes/master/best-quotes/src/assets/Github2.png)
 
 IphoneX View:
 
-![alt text](https://raw.githubusercontent.com/Arthurgt/BestQuotes/master/BestQuotes/src/assets/Github3.png)
+![alt text](https://raw.githubusercontent.com/Arthurgt/BestQuotes/master/best-quotes/src/assets/Github3.png)
