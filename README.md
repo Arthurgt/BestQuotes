@@ -1,6 +1,6 @@
 #BestQuotesApp
 
-Best quotes application. Simple application created using Angular 9. It is simple ranking of best quotes.
+Best quotes application. Aapplication created using Angular 9. It is a ranking of best quotes.
 
 Chrome View:
 
